@@ -524,3 +524,805 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-09 07:53:03.724
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2022-05-10 05:48:49.515 -----------------------------------------------
+eclipse.buildId=4.22.0.I20211124-1800
+java.version=17.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2022-05-10 05:49:09.695
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-10 05:49:09.695
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5c3007d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@66b40dd3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-10 05:49:09.695
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7296fe0b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4a5066f5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-10 05:49:23.223
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\MOULALI'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 05:54:25.544
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 05:54:25.568
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 05:55:10.605
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 05:55:10.610
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 05:55:52.752
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 05:55:52.758
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 05:56:09.564
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 05:56:09.567
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 05:56:55.995
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 05:56:55.998
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 05:57:33.785
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 05:57:33.788
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 05:58:43.868
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 05:58:43.872
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 05:59:45.741
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 05:59:45.749
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:01:21.101
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:01:21.104
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:02:21.545
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:02:21.550
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:05:13.457
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:05:13.460
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:05:33.021
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:05:33.024
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:06:05.261
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:06:05.266
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:06:27.559
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:06:27.563
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:06:32.282
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:06:32.287
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:08:55.555
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:08:55.560
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:09:14.641
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:09:14.645
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:09:35.157
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:09:35.160
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:09:54.869
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:09:54.872
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:14:14.351
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:14:14.359
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:14:45.057
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:14:45.060
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:14:53.081
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:14:53.086
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:16:45.327
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:16:45.330
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:17:34.551
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:17:34.555
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:17:52.449
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:17:52.451
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:18:11.759
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:18:11.764
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:20:57.816
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:20:57.819
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:24:19.251
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:24:19.254
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:24:47.203
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:24:47.207
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:25:07.762
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:25:07.766
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:28:57.759
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:28:57.763
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:30:08.037
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:30:08.041
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:31:02.827
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:31:02.830
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:37:40.894
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:37:40.899
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:38:07.613
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:38:07.615
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:39:55.816
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:39:55.818
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:40:21.018
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:40:21.021
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-05-10 06:44:00.335
+!MESSAGE Illegal character in path at index 16: file:/D:/Program Files/Eclipse/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.18.1.20211011-2139/jars/
+!STACK 0
+java.net.URISyntaxException: Illegal character in path at index 16: file:/D:/Program Files/Eclipse/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.18.1.20211011-2139/jars/
+	at java.base/java.net.URI$Parser.fail(URI.java:2974)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3145)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3227)
+	at java.base/java.net.URI$Parser.parse(URI.java:3175)
+	at java.base/java.net.URI.<init>(URI.java:623)
+	at java.base/java.net.URL.toURI(URL.java:1056)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.addJarsFromBundle(MavenRuntimeClasspathProvider.java:83)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.get(MavenRuntimeClasspathProvider.java:66)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.get(MavenRuntimeClasspathProvider.java:1)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.HashMap$EntrySpliterator.forEachRemaining(HashMap.java:1850)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLExtensionRegistry.getXMLLSClassPathExtensions(XMLExtensionRegistry.java:81)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.getExtensionJarPaths(XMLLanguageServer.java:142)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.<init>(XMLLanguageServer.java:83)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.createConnectionProvider(LanguageServersRegistry.java:127)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:222)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-05-10 06:44:00.338
+!MESSAGE Illegal character in path at index 16: file:/D:/Program Files/Eclipse/eclipse/plugins/org.eclipse.m2e.maven.indexer_1.18.1.20211011-2139/jars/
+!STACK 0
+java.net.URISyntaxException: Illegal character in path at index 16: file:/D:/Program Files/Eclipse/eclipse/plugins/org.eclipse.m2e.maven.indexer_1.18.1.20211011-2139/jars/
+	at java.base/java.net.URI$Parser.fail(URI.java:2974)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3145)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3227)
+	at java.base/java.net.URI$Parser.parse(URI.java:3175)
+	at java.base/java.net.URI.<init>(URI.java:623)
+	at java.base/java.net.URL.toURI(URL.java:1056)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.addJarsFromBundle(MavenRuntimeClasspathProvider.java:83)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.get(MavenRuntimeClasspathProvider.java:68)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.get(MavenRuntimeClasspathProvider.java:1)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.HashMap$EntrySpliterator.forEachRemaining(HashMap.java:1850)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLExtensionRegistry.getXMLLSClassPathExtensions(XMLExtensionRegistry.java:81)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.getExtensionJarPaths(XMLLanguageServer.java:142)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.<init>(XMLLanguageServer.java:83)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.createConnectionProvider(LanguageServersRegistry.java:127)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:222)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:45:20.605
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:45:20.608
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:48:01.409
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:48:01.413
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:48:21.666
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:48:21.668
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:49:31.897
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:49:31.901
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:49:39.307
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:49:39.310
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-05-10 06:49:58.022
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$13(LanguageServerWrapper.java:425)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$4(LanguageServerWrapper.java:260)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:50:36.825
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:50:36.828
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:59:50.595
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 06:59:50.598
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:00:54.272
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:00:54.275
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:02:06.511
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:02:06.515
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:02:22.502
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:02:22.504
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:03:20.450
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:03:20.452
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:04:32.581
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:04:32.584
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:05:31.181
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:05:31.197
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:06:57.476
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:06:57.480
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:07:52.874
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:07:52.876
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:09:38.784
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:09:38.787
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:11:26.780
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:11:26.784
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:12:27.050
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:12:27.053
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:12:36.641
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:12:36.643
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:15:00.835
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:15:00.837
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:17:21.235
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:17:21.237
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:17:48.355
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:17:48.359
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:19:51.549
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:19:51.552
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:20:19.713
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:20:19.716
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:24:04.283
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:24:04.286
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:24:25.870
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:24:25.874
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2022-05-10 07:24:26.243
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\MOULALI\.eclipse\org.eclipse.platform_4.21.0_1417216107_win32_win32_x86_64\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\test-classes C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\classes C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured\5.0.1\rest-assured-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar C:\Users\MOULALI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar C:\Users\MOULALI\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar C:\Users\MOULALI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\xml-path\5.0.1\xml-path-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar C:\Users\MOULALI\.m2\repository\org\testng\testng\7.5\testng-7.5.jar C:\Users\MOULALI\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar C:\Users\MOULALI\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar C:\Users\MOULALI\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\MOULALI\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar C:\Users\MOULALI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60288 -protocol json -d C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\test-output C:\Users\MOULALI\AppData\Local\Temp\testng-eclipse-966084824\testng-customsuite.xml
+java -ea -classpath C:\Users\MOULALI\.eclipse\org.eclipse.platform_4.21.0_1417216107_win32_win32_x86_64\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar:C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\test-classes:C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\classes:C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured\5.0.1\rest-assured-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar:C:\Users\MOULALI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar:C:\Users\MOULALI\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar:C:\Users\MOULALI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\xml-path\5.0.1\xml-path-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar:C:\Users\MOULALI\.m2\repository\org\testng\testng\7.5\testng-7.5.jar:C:\Users\MOULALI\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar:C:\Users\MOULALI\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar:C:\Users\MOULALI\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\MOULALI\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar:C:\Users\MOULALI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar org.testng.remote.RemoteTestNG -serport 60288 -protocol json -d C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\test-output C:\Users\MOULALI\AppData\Local\Temp\testng-eclipse-966084824\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:26:10.438
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:26:10.442
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:26:43.641
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:26:43.644
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2022-05-10 07:26:46.476
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\MOULALI\.eclipse\org.eclipse.platform_4.21.0_1417216107_win32_win32_x86_64\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\test-classes C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\classes C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured\5.0.1\rest-assured-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar C:\Users\MOULALI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar C:\Users\MOULALI\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar C:\Users\MOULALI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\xml-path\5.0.1\xml-path-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar C:\Users\MOULALI\.m2\repository\org\testng\testng\7.5\testng-7.5.jar C:\Users\MOULALI\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar C:\Users\MOULALI\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar C:\Users\MOULALI\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\MOULALI\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar C:\Users\MOULALI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60290 -protocol json -d C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\test-output C:\Users\MOULALI\AppData\Local\Temp\testng-eclipse-183737068\testng-customsuite.xml
+java -ea -classpath C:\Users\MOULALI\.eclipse\org.eclipse.platform_4.21.0_1417216107_win32_win32_x86_64\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar:C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\test-classes:C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\classes:C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured\5.0.1\rest-assured-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar:C:\Users\MOULALI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar:C:\Users\MOULALI\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar:C:\Users\MOULALI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\xml-path\5.0.1\xml-path-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar:C:\Users\MOULALI\.m2\repository\org\testng\testng\7.5\testng-7.5.jar:C:\Users\MOULALI\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar:C:\Users\MOULALI\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar:C:\Users\MOULALI\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\MOULALI\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar:C:\Users\MOULALI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar org.testng.remote.RemoteTestNG -serport 60290 -protocol json -d C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\test-output C:\Users\MOULALI\AppData\Local\Temp\testng-eclipse-183737068\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:28:02.506
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:28:02.510
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2022-05-10 07:28:05.658
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\MOULALI\.eclipse\org.eclipse.platform_4.21.0_1417216107_win32_win32_x86_64\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\test-classes C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\classes C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured\5.0.1\rest-assured-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar C:\Users\MOULALI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar C:\Users\MOULALI\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar C:\Users\MOULALI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\xml-path\5.0.1\xml-path-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar C:\Users\MOULALI\.m2\repository\org\testng\testng\7.5\testng-7.5.jar C:\Users\MOULALI\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar C:\Users\MOULALI\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar C:\Users\MOULALI\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\MOULALI\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar C:\Users\MOULALI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60295 -protocol json -d C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\test-output C:\Users\MOULALI\AppData\Local\Temp\testng-eclipse-502965929\testng-customsuite.xml
+java -ea -classpath C:\Users\MOULALI\.eclipse\org.eclipse.platform_4.21.0_1417216107_win32_win32_x86_64\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar:C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\test-classes:C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\classes:C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured\5.0.1\rest-assured-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar:C:\Users\MOULALI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar:C:\Users\MOULALI\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar:C:\Users\MOULALI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\xml-path\5.0.1\xml-path-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar:C:\Users\MOULALI\.m2\repository\org\testng\testng\7.5\testng-7.5.jar:C:\Users\MOULALI\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar:C:\Users\MOULALI\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar:C:\Users\MOULALI\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\MOULALI\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar:C:\Users\MOULALI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar org.testng.remote.RemoteTestNG -serport 60295 -protocol json -d C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\test-output C:\Users\MOULALI\AppData\Local\Temp\testng-eclipse-502965929\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:30:12.986
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:30:12.990
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:40:56.829
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:40:56.833
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:45:36.298
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:45:36.302
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:48:29.433
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:48:29.436
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:48:46.320
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:48:46.323
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2022-05-10 07:48:54.544
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\MOULALI\.eclipse\org.eclipse.platform_4.21.0_1417216107_win32_win32_x86_64\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\test-classes C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\classes C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured\5.0.1\rest-assured-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar C:\Users\MOULALI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar C:\Users\MOULALI\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar C:\Users\MOULALI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\xml-path\5.0.1\xml-path-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar C:\Users\MOULALI\.m2\repository\org\testng\testng\7.5\testng-7.5.jar C:\Users\MOULALI\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar C:\Users\MOULALI\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar C:\Users\MOULALI\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\MOULALI\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar C:\Users\MOULALI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60346 -protocol json -d C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\test-output C:\Users\MOULALI\AppData\Local\Temp\testng-eclipse--564114102\testng-customsuite.xml
+java -ea -classpath C:\Users\MOULALI\.eclipse\org.eclipse.platform_4.21.0_1417216107_win32_win32_x86_64\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar:C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\test-classes:C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\classes:C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured\5.0.1\rest-assured-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar:C:\Users\MOULALI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar:C:\Users\MOULALI\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar:C:\Users\MOULALI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\xml-path\5.0.1\xml-path-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar:C:\Users\MOULALI\.m2\repository\org\testng\testng\7.5\testng-7.5.jar:C:\Users\MOULALI\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar:C:\Users\MOULALI\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar:C:\Users\MOULALI\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\MOULALI\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar:C:\Users\MOULALI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar org.testng.remote.RemoteTestNG -serport 60346 -protocol json -d C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\test-output C:\Users\MOULALI\AppData\Local\Temp\testng-eclipse--564114102\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:49:34.182
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:49:34.185
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2022-05-10 07:49:36.555
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\MOULALI\.eclipse\org.eclipse.platform_4.21.0_1417216107_win32_win32_x86_64\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\test-classes C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\classes C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured\5.0.1\rest-assured-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar C:\Users\MOULALI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar C:\Users\MOULALI\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar C:\Users\MOULALI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\xml-path\5.0.1\xml-path-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar C:\Users\MOULALI\.m2\repository\org\testng\testng\7.5\testng-7.5.jar C:\Users\MOULALI\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar C:\Users\MOULALI\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar C:\Users\MOULALI\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\MOULALI\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar C:\Users\MOULALI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60350 -protocol json -d C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\test-output C:\Users\MOULALI\AppData\Local\Temp\testng-eclipse-1704811458\testng-customsuite.xml
+java -ea -classpath C:\Users\MOULALI\.eclipse\org.eclipse.platform_4.21.0_1417216107_win32_win32_x86_64\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar:C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\test-classes:C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\classes:C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured\5.0.1\rest-assured-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar:C:\Users\MOULALI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar:C:\Users\MOULALI\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar:C:\Users\MOULALI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\xml-path\5.0.1\xml-path-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar:C:\Users\MOULALI\.m2\repository\org\testng\testng\7.5\testng-7.5.jar:C:\Users\MOULALI\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar:C:\Users\MOULALI\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar:C:\Users\MOULALI\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\MOULALI\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar:C:\Users\MOULALI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar org.testng.remote.RemoteTestNG -serport 60350 -protocol json -d C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\test-output C:\Users\MOULALI\AppData\Local\Temp\testng-eclipse-1704811458\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:49:58.763
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:49:58.767
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:50:36.684
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:50:36.687
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2022-05-10 07:50:42.717
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\MOULALI\.eclipse\org.eclipse.platform_4.21.0_1417216107_win32_win32_x86_64\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\test-classes C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\classes C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured\5.0.1\rest-assured-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar C:\Users\MOULALI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar C:\Users\MOULALI\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar C:\Users\MOULALI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\xml-path\5.0.1\xml-path-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar C:\Users\MOULALI\.m2\repository\org\testng\testng\7.5\testng-7.5.jar C:\Users\MOULALI\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar C:\Users\MOULALI\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar C:\Users\MOULALI\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\MOULALI\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar C:\Users\MOULALI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60357 -protocol json -d C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\test-output C:\Users\MOULALI\AppData\Local\Temp\testng-eclipse-1153325078\testng-customsuite.xml
+java -ea -classpath C:\Users\MOULALI\.eclipse\org.eclipse.platform_4.21.0_1417216107_win32_win32_x86_64\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar:C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\test-classes:C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\classes:C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured\5.0.1\rest-assured-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar:C:\Users\MOULALI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar:C:\Users\MOULALI\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar:C:\Users\MOULALI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\xml-path\5.0.1\xml-path-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar:C:\Users\MOULALI\.m2\repository\org\testng\testng\7.5\testng-7.5.jar:C:\Users\MOULALI\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar:C:\Users\MOULALI\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar:C:\Users\MOULALI\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\MOULALI\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar:C:\Users\MOULALI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar org.testng.remote.RemoteTestNG -serport 60357 -protocol json -d C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\test-output C:\Users\MOULALI\AppData\Local\Temp\testng-eclipse-1153325078\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2022-05-10 07:50:57.191
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\MOULALI\.eclipse\org.eclipse.platform_4.21.0_1417216107_win32_win32_x86_64\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\test-classes C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\classes C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured\5.0.1\rest-assured-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar C:\Users\MOULALI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar C:\Users\MOULALI\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar C:\Users\MOULALI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\xml-path\5.0.1\xml-path-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar C:\Users\MOULALI\.m2\repository\org\testng\testng\7.5\testng-7.5.jar C:\Users\MOULALI\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar C:\Users\MOULALI\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar C:\Users\MOULALI\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\MOULALI\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar C:\Users\MOULALI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60361 -protocol json -d C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\test-output C:\Users\MOULALI\AppData\Local\Temp\testng-eclipse-1610638278\testng-customsuite.xml
+java -ea -classpath C:\Users\MOULALI\.eclipse\org.eclipse.platform_4.21.0_1417216107_win32_win32_x86_64\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar:C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\test-classes:C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\classes:C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured\5.0.1\rest-assured-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar:C:\Users\MOULALI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar:C:\Users\MOULALI\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar:C:\Users\MOULALI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\xml-path\5.0.1\xml-path-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar:C:\Users\MOULALI\.m2\repository\org\testng\testng\7.5\testng-7.5.jar:C:\Users\MOULALI\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar:C:\Users\MOULALI\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar:C:\Users\MOULALI\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\MOULALI\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar:C:\Users\MOULALI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar org.testng.remote.RemoteTestNG -serport 60361 -protocol json -d C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\test-output C:\Users\MOULALI\AppData\Local\Temp\testng-eclipse-1610638278\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2022-05-10 07:51:13.297
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\MOULALI\.eclipse\org.eclipse.platform_4.21.0_1417216107_win32_win32_x86_64\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\test-classes C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\classes C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured\5.0.1\rest-assured-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar C:\Users\MOULALI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar C:\Users\MOULALI\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar C:\Users\MOULALI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\xml-path\5.0.1\xml-path-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar C:\Users\MOULALI\.m2\repository\org\testng\testng\7.5\testng-7.5.jar C:\Users\MOULALI\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar C:\Users\MOULALI\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar C:\Users\MOULALI\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\MOULALI\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar C:\Users\MOULALI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60367 -protocol json -d C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\test-output C:\Users\MOULALI\AppData\Local\Temp\testng-eclipse--526626538\testng-customsuite.xml
+java -ea -classpath C:\Users\MOULALI\.eclipse\org.eclipse.platform_4.21.0_1417216107_win32_win32_x86_64\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar:C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\test-classes:C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\classes:C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured\5.0.1\rest-assured-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar:C:\Users\MOULALI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar:C:\Users\MOULALI\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar:C:\Users\MOULALI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\xml-path\5.0.1\xml-path-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar:C:\Users\MOULALI\.m2\repository\org\testng\testng\7.5\testng-7.5.jar:C:\Users\MOULALI\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar:C:\Users\MOULALI\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar:C:\Users\MOULALI\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\MOULALI\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar:C:\Users\MOULALI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar org.testng.remote.RemoteTestNG -serport 60367 -protocol json -d C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\test-output C:\Users\MOULALI\AppData\Local\Temp\testng-eclipse--526626538\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:51:19.427
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:51:19.430
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2022-05-10 07:51:47.089
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\MOULALI\.eclipse\org.eclipse.platform_4.21.0_1417216107_win32_win32_x86_64\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\test-classes C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\classes C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured\5.0.1\rest-assured-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar C:\Users\MOULALI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar C:\Users\MOULALI\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar C:\Users\MOULALI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\xml-path\5.0.1\xml-path-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar C:\Users\MOULALI\.m2\repository\org\testng\testng\7.5\testng-7.5.jar C:\Users\MOULALI\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar C:\Users\MOULALI\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar C:\Users\MOULALI\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\MOULALI\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar C:\Users\MOULALI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60376 -protocol json -d C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\test-output C:\Users\MOULALI\AppData\Local\Temp\testng-eclipse--655086698\testng-customsuite.xml
+java -ea -classpath C:\Users\MOULALI\.eclipse\org.eclipse.platform_4.21.0_1417216107_win32_win32_x86_64\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar:C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\test-classes:C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\classes:C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured\5.0.1\rest-assured-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar:C:\Users\MOULALI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar:C:\Users\MOULALI\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar:C:\Users\MOULALI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\xml-path\5.0.1\xml-path-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar:C:\Users\MOULALI\.m2\repository\org\testng\testng\7.5\testng-7.5.jar:C:\Users\MOULALI\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar:C:\Users\MOULALI\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar:C:\Users\MOULALI\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\MOULALI\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar:C:\Users\MOULALI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar org.testng.remote.RemoteTestNG -serport 60376 -protocol json -d C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\test-output C:\Users\MOULALI\AppData\Local\Temp\testng-eclipse--655086698\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:56:40.832
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:56:40.835
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:56:43.297
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:56:43.301
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:57:13.272
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:57:13.275
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:57:51.742
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 07:57:51.744
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:01:01.123
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:01:01.127
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2022-05-10 08:01:11.978
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\MOULALI\.eclipse\org.eclipse.platform_4.21.0_1417216107_win32_win32_x86_64\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\test-classes C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\classes C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured\5.0.1\rest-assured-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar C:\Users\MOULALI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar C:\Users\MOULALI\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar C:\Users\MOULALI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\xml-path\5.0.1\xml-path-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar C:\Users\MOULALI\.m2\repository\org\testng\testng\7.5\testng-7.5.jar C:\Users\MOULALI\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar C:\Users\MOULALI\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar C:\Users\MOULALI\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\MOULALI\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar C:\Users\MOULALI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60381 -protocol json -d C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\test-output C:\Users\MOULALI\AppData\Local\Temp\testng-eclipse-1507820\testng-customsuite.xml
+java -ea -classpath C:\Users\MOULALI\.eclipse\org.eclipse.platform_4.21.0_1417216107_win32_win32_x86_64\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar:C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\test-classes:C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\classes:C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured\5.0.1\rest-assured-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar:C:\Users\MOULALI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar:C:\Users\MOULALI\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar:C:\Users\MOULALI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\xml-path\5.0.1\xml-path-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar:C:\Users\MOULALI\.m2\repository\org\testng\testng\7.5\testng-7.5.jar:C:\Users\MOULALI\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar:C:\Users\MOULALI\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar:C:\Users\MOULALI\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\MOULALI\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar:C:\Users\MOULALI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar org.testng.remote.RemoteTestNG -serport 60381 -protocol json -d C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\test-output C:\Users\MOULALI\AppData\Local\Temp\testng-eclipse-1507820\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:02:18.585
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:02:18.589
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:05:54.748
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:05:54.751
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:09:22.232
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:09:22.234
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:09:41.257
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:09:41.260
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:10:33.095
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:10:33.097
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:11:41.273
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:11:41.288
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:12:06.738
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:12:06.741
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.testng.eclipse 1 0 2022-05-10 08:15:21.290
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\MOULALI\.eclipse\org.eclipse.platform_4.21.0_1417216107_win32_win32_x86_64\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\test-classes C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\classes C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured\5.0.1\rest-assured-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar C:\Users\MOULALI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar C:\Users\MOULALI\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar C:\Users\MOULALI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar C:\Users\MOULALI\.m2\repository\io\rest-assured\xml-path\5.0.1\xml-path-5.0.1.jar C:\Users\MOULALI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar C:\Users\MOULALI\.m2\repository\org\testng\testng\7.5\testng-7.5.jar C:\Users\MOULALI\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar C:\Users\MOULALI\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar C:\Users\MOULALI\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar C:\Users\MOULALI\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar C:\Users\MOULALI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 60404 -protocol json -d C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\test-output C:\Users\MOULALI\AppData\Local\Temp\testng-eclipse--1620200572\testng-customsuite.xml
+java -ea -classpath C:\Users\MOULALI\.eclipse\org.eclipse.platform_4.21.0_1417216107_win32_win32_x86_64\configuration\org.eclipse.osgi\429\0\.cp\lib\testng-remote.jar:C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\test-classes:C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\target\classes:C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured\5.0.1\rest-assured-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy\4.0.1\groovy-4.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-xml\4.0.1\groovy-xml-4.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar:C:\Users\MOULALI\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar:C:\Users\MOULALI\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar:C:\Users\MOULALI\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar:C:\Users\MOULALI\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\json-path\5.0.1\json-path-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\groovy\groovy-json\4.0.1\groovy-json-4.0.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\rest-assured-common\5.0.1\rest-assured-common-5.0.1.jar:C:\Users\MOULALI\.m2\repository\io\rest-assured\xml-path\5.0.1\xml-path-5.0.1.jar:C:\Users\MOULALI\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar:C:\Users\MOULALI\.m2\repository\org\testng\testng\7.5\testng-7.5.jar:C:\Users\MOULALI\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar:C:\Users\MOULALI\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar:C:\Users\MOULALI\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar:C:\Users\MOULALI\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar:C:\Users\MOULALI\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar org.testng.remote.RemoteTestNG -serport 60404 -protocol json -d C:\Testing\RestAssured\RestAssuredDemos\DemoRestProject\test-output C:\Users\MOULALI\AppData\Local\Temp\testng-eclipse--1620200572\testng-customsuite.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:22:23.380
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:22:23.382
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:28:47.537
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:28:47.540
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:29:27.582
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:29:27.584
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:29:35.180
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-10 08:29:35.183
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!

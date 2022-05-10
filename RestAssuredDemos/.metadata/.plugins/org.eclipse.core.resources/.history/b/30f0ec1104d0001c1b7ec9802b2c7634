@@ -1,0 +1,9 @@
+package day2;
+
+public class SumValidation {
+	//6. Verify if Sum of all Course prices matches with Purchase Amount
+	
+	@Test
+	
+
+}

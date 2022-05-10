@@ -1,0 +1,708 @@
+Assertions on json response body and headers through automated code: - 1.after then , use body("key", equalTo("Value"))  , header("key","value")
+________________________________________________________________________
+package day2;
+
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
+
+import files.Payload;
+import io.restassured.RestAssured;
+
+public class AssertionOnJSONBodyandHeaders {
+
+	public static void main(String[] args) {
+		RestAssured.baseURI="https://rahulshettyacademy.com";
+		
+		given().log().all().queryParam("key", "qaclick123").header("Content-Type","application/json")
+		.body(Payload.AddPlace())
+		.when().post("maps/api/place/add/json")
+		.then().log().all().assertThat().statusCode(200).body("scope",equalTo("APP"))
+		.header("server", "Apache/2.4.41 (Ubuntu)");
+		
+		
+		
+		//assertions should be placed after then 
+		//1.asserting on body - body("key", equalTo("Value")) - import the static org.hamcrest.Matchers.*
+		//2.asserting on headers - header("key","value")
+
+		
+		//the payload we are passing in body can be sent from a different file , instead of directly giving in the same file body
+		//create a package and a file payload.java with a static method and use that inside the body className.methodName
+	}
+
+}
+
+Placing the payload in a different file , inside a static method and using it in above body as className.methodName
+
+package files;
+
+public class Payload {
+
+	public static String AddPlace() {
+		return "{\r\n"
+				+ "  \"location\": {\r\n"
+				+ "    \"lat\": -38.383494,\r\n"
+				+ "    \"lng\": 33.427362\r\n"
+				+ "  },\r\n"
+				+ "  \"accuracy\": 50,\r\n"
+				+ "  \"name\": \"Frontline house\",\r\n"
+				+ "  \"phone_number\": \"(+91) 983 893 3937\",\r\n"
+				+ "  \"address\": \"29, side layout, cohen 09\",\r\n"
+				+ "  \"types\": [\r\n"
+				+ "    \"shoe park\",\r\n"
+				+ "    \"shop\"\r\n"
+				+ "  ],\r\n"
+				+ "  \"website\": \"http://google.com\",\r\n"
+				+ "  \"language\": \"French-IN\"\r\n"
+				+ "}\r\n"
+				+ "";
+	}
+}
+********************** ********************** ********************** ********************** ********************** ********************** ********************************************
+
+Parsing Json response body Using JSONPath Class: - JsonPath js = new JsonPath(response); , passing the response as parameter
+
+package day2;
+
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.*;
+
+import files.Payload;
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+
+public class ParsingJsonbodyUsingJSONPathClass {
+	public static void main(String[] args) {
+		RestAssured.baseURI="https://rahulshettyacademy.com";
+		
+		String response = given().log().all().queryParam("key", "qaclick123").header("Content-Type","application/json")
+		.body(Payload.AddPlace())
+		.when().post("maps/api/place/add/json")
+		.then().assertThat().statusCode(200).body("scope",equalTo("APP"))
+		.header("server", "Apache/2.4.41 (Ubuntu)").extract().response().asString();
+		
+		
+		//to store whole response in a string
+		//use --> .extract().response().asString()  and store it in a string variable as above
+		//lets remove the log().all() after then and try to print the stored response in string
+		
+		System.out.println(response);
+		
+		//To extract place_id from the response
+		//we have JsonPath , create object for it and pass the response
+		JsonPath js = new JsonPath(response);
+		String place_id  = js.getString("place_id");//use this js.getString("keyHere")
+		System.out.println(place_id);
+		
+	}
+}
+********************** ********************** ********************** ********************** ********************** ********************** ********************************************
+//using the put method , by passing the place id generated in post and validating whether address updated using body("key",equalTo("value")
+
+package day2;
+
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+
+import files.Payload;
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+
+public class IntegratingMultipleAPIswithCommonJSONResponseValues {
+	public static void main(String[] args) {
+		RestAssured.baseURI="https://rahulshettyacademy.com";
+		
+		String response = given().log().all().queryParam("key", "qaclick123").header("Content-Type","application/json")
+		.body(Payload.AddPlace())
+		.when().post("maps/api/place/add/json")
+		.then().assertThat().statusCode(200).body("scope",equalTo("APP"))
+		.header("server", "Apache/2.4.41 (Ubuntu)").extract().response().asString();
+		
+		
+		//to store whole response in a string
+		//use --> .extract().response().asString()  and store it in a string variable as above
+		//lets remove the log().all() after then and try to print the stored response in string
+		
+		System.out.println(response);
+		
+		//To extract place_id from the response
+		//we have JsonPath , create object for it and pass the response
+		JsonPath js = new JsonPath(response);
+		String place_id  = js.getString("place_id");//use this js.getString("keyHere")
+		System.out.println(place_id);
+		
+		
+		//update the place , use the put to update
+		
+		given().log().all().queryParam("key","qaclick123").header("Content-Type","application/json")
+		.body("{\r\n"
+				+ "\"place_id\":\""+place_id+"\",\r\n"
+				+ "\"address\":\"70 Summer walk, USA\",\r\n"
+				+ "\"key\":\"qaclick123\"\r\n"
+				+ "}")
+		.when().put("maps/api/place/update/json")
+		.then().assertThat().log().all().statusCode(200).body("msg", equalTo("Address successfully updated"));
+		
+	}
+}
+********************** ********************** ********************** ********************** ********************** ********************** ********************************************
+Using get method to extract the response
+
+package day2;
+
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+
+import files.Payload;
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+
+public class IntegratingMultipleAPIswithCommonJSONResponseValues {
+	public static void main(String[] args) {
+		RestAssured.baseURI="https://rahulshettyacademy.com";
+		
+		String response = given().log().all().queryParam("key", "qaclick123").header("Content-Type","application/json")
+		.body(Payload.AddPlace())
+		.when().post("maps/api/place/add/json")
+		.then().assertThat().statusCode(200).body("scope",equalTo("APP"))
+		.header("server", "Apache/2.4.41 (Ubuntu)").extract().response().asString();
+		
+		
+		//to store whole response in a string
+		//use --> .extract().response().asString()  and store it in a string variable as above
+		//lets remove the log().all() after then and try to print the stored response in string
+		
+		System.out.println(response);
+		
+		//To extract place_id from the response
+		//we have JsonPath , create object for it and pass the response
+		JsonPath js = new JsonPath(response);
+		String place_id  = js.getString("place_id");//use this js.getString("keyHere")
+		System.out.println(place_id);
+		
+		
+		//update the place , use the put to update
+		String newAddress = "Summer Walk, Africa";//updating place using a variable
+		
+		given().log().all().queryParam("key","qaclick123").header("Content-Type","application/json")
+		.body("{\r\n"
+				+ "\"place_id\":\""+place_id+"\",\r\n"
+				+ "\"address\":\""+newAddress+"\",\r\n"
+				+ "\"key\":\"qaclick123\"\r\n"
+				+ "}")
+		.when().put("maps/api/place/update/json")
+		.then().assertThat().log().all().statusCode(200).body("msg", equalTo("Address successfully updated"));
+		
+		
+		//Get Place - we need not give any header for get method
+
+		String getPlaceResponse = given().log().all().queryParam("key","qaclick123")
+		.queryParam("place_id", place_id)
+		.when().get("maps/api/place/get/json")
+		.then().assertThat().log().all().statusCode(200).extract().response().asString();
+		
+		JsonPath js1 = new JsonPath(getPlaceResponse);
+		String actualAddress = js1.getString("address");
+		System.out.println(actualAddress);
+		
+		
+	}
+}
+********************** ********************** ********************** ********************** ********************** ********************** ********************************************
+For Assertions use the testng dependency  and also use reusable methods for converting raw to Json:
+
+package day2;
+
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+
+import org.testng.Assert;
+
+import files.Payload;
+import files.ReusableMethods;
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+
+public class IntegratingMultipleAPIswithCommonJSONResponseValues {
+	public static void main(String[] args) {
+		RestAssured.baseURI="https://rahulshettyacademy.com";
+		
+		String response = given().log().all().queryParam("key", "qaclick123").header("Content-Type","application/json")
+		.body(Payload.AddPlace())
+		.when().post("maps/api/place/add/json")
+		.then().assertThat().statusCode(200).body("scope",equalTo("APP"))
+		.header("server", "Apache/2.4.41 (Ubuntu)").extract().response().asString();
+		
+		
+		//to store whole response in a string
+		//use --> .extract().response().asString()  and store it in a string variable as above
+		//lets remove the log().all() after then and try to print the stored response in string
+		
+		System.out.println(response);
+		
+		//To extract place_id from the response
+		//we have JsonPath , create object for it and pass the response
+		JsonPath js = new JsonPath(response);
+		String place_id  = js.getString("place_id");//use this js.getString("keyHere")
+		System.out.println(place_id);
+		
+		
+		//update the place , use the put to update
+		String newAddress = "Summer Walk, Africa";//updating place using a variable
+		
+		given().log().all().queryParam("key","qaclick123").header("Content-Type","application/json")
+		.body("{\r\n"
+				+ "\"place_id\":\""+place_id+"\",\r\n"
+				+ "\"address\":\""+newAddress+"\",\r\n"
+				+ "\"key\":\"qaclick123\"\r\n"
+				+ "}")
+		.when().put("maps/api/place/update/json")
+		.then().assertThat().log().all().statusCode(200).body("msg", equalTo("Address successfully updated"));
+		
+		
+		//Get Place - we need not give any header for get method
+		String getPlaceResponse = given().log().all().queryParam("key","qaclick123")
+		.queryParam("place_id", place_id)
+		.when().get("maps/api/place/get/json")
+		.then().assertThat().log().all().statusCode(200).extract().response().asString();
+		
+		
+		//we can use a reusable method instead of JsonPath directly , create a class ReusableMethods with a static method rawToJson 
+		//inside files package
+		JsonPath js1 = ReusableMethods.rawToJson(getPlaceResponse);
+		//JsonPath js1 = new JsonPath(getPlaceResponse);
+		String actualAddress = js1.getString("address");
+		System.out.println(actualAddress);
+		
+		//testng assertion
+		Assert.assertEquals(actualAddress, "Summer Walk, Africa");
+		
+		
+	}
+}
+
+
+package files;
+
+import io.restassured.path.json.JsonPath;
+
+public class ReusableMethods {
+
+	
+	public static JsonPath rawToJson(String response) {
+		JsonPath js = new JsonPath(response);
+		
+		return js;
+		
+	}
+}
+
+********************** ********************** ********************** ********************** ********************** ********************** ********************************************
+Understanding the structure of complex nested json and its array notation:
+
+go to jsoneditoronline.org in chrome
+
+{
+  "dashboard": {
+    "purchaseAmount": 910,
+    "website": "rahulshettyacademy.com"
+  },
+  "courses": [
+    {
+      "title": "Selenium Python",
+      "price": 50,
+      "copies": 6
+    },
+    {
+      "title": "Cypress",
+      "price": 40,
+      "copies": 4
+    },
+    {
+      "title": "RPA",
+      "price": 45,
+      "copies": 10
+    }
+  ]
+}
+
+
+1. Print No of courses returned by API
+
+2.Print Purchase Amount
+
+3. Print Title of the first course
+
+4. Print All course titles and their respective Prices
+
+5. Print no of copies sold by RPA Course
+
+6. Verify if Sum of all Course prices matches with Purchase Amount
+
+
+********************** ********************** ********************** ********************** ********************** ********************** ********************************************
+Create a class ComplexJsonParse.java and in payload.java add above json [so that we can do mock test as its still in dev phase]
+
+package files;
+
+public class Payload {
+
+	public static String AddPlace() {
+		return "{\r\n"
+				+ "  \"location\": {\r\n"
+				+ "    \"lat\": -38.383494,\r\n"
+				+ "    \"lng\": 33.427362\r\n"
+				+ "  },\r\n"
+				+ "  \"accuracy\": 50,\r\n"
+				+ "  \"name\": \"Frontline house\",\r\n"
+				+ "  \"phone_number\": \"(+91) 983 893 3937\",\r\n"
+				+ "  \"address\": \"29, side layout, cohen 09\",\r\n"
+				+ "  \"types\": [\r\n"
+				+ "    \"shoe park\",\r\n"
+				+ "    \"shop\"\r\n"
+				+ "  ],\r\n"
+				+ "  \"website\": \"http://google.com\",\r\n"
+				+ "  \"language\": \"French-IN\"\r\n"
+				+ "}\r\n"
+				+ "";
+	}
+	
+	
+	public static String CoursePrice() {
+		return "{\r\n"
+				+ "  \"dashboard\": {\r\n"
+				+ "    \"purchaseAmount\": 910,\r\n"
+				+ "    \"website\": \"rahulshettyacademy.com\"\r\n"
+				+ "  },\r\n"
+				+ "  \"courses\": [\r\n"
+				+ "    {\r\n"
+				+ "      \"title\": \"Selenium Python\",\r\n"
+				+ "      \"price\": 50,\r\n"
+				+ "      \"copies\": 6\r\n"
+				+ "    },\r\n"
+				+ "    {\r\n"
+				+ "      \"title\": \"Cypress\",\r\n"
+				+ "      \"price\": 40,\r\n"
+				+ "      \"copies\": 4\r\n"
+				+ "    },\r\n"
+				+ "    {\r\n"
+				+ "      \"title\": \"RPA\",\r\n"
+				+ "      \"price\": 45,\r\n"
+				+ "      \"copies\": 10\r\n"
+				+ "    }\r\n"
+				+ "  ]\r\n"
+				+ "}";
+	}
+}
+
+
+
+package day2;
+
+import files.Payload;
+import io.restassured.path.json.JsonPath;
+
+public class ComplexJsonParse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		JsonPath js = new JsonPath(Payload.CoursePrice());
+
+		// 1.print number of courses returned by API
+		// size should be used on array only
+		int count = js.getInt("courses.size()");
+		System.out.println(count);
+
+		// 2.print price
+		int price = js.getInt("dashboard.purchaseAmount");
+		System.out.println(price);
+
+		// 3.Print Title of the first course
+		String titleFirstCourse = js.get("courses[0].title");
+		System.out.println(titleFirstCourse);
+
+		// 4. Print All course titles and their respective Prices
+		// we can get total courses using the size
+		for (int i = 0; i < count; i++) {
+			String courseTitles = js.get("courses[" + i + "].title");
+			System.out.println(js.get("courses[" + i + "].price").toString());
+			System.out.println(courseTitles);
+
+		}
+		
+		//5. Print no of copies sold by RPA Course
+		System.out.println("print no of courses sold by RPA course");
+		for(int i=0;i<count;i++) {
+			String courseTitles = js.get("courses[" + i + "].title");
+			if(courseTitles.equalsIgnoreCase("RPA")) {
+				int copies = js.get("courses["+i+"].copies");
+				System.out.println(copies);
+				break;
+			}
+		}
+		
+		
+
+	}
+
+}
+
+
+package day2;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import files.Payload;
+import io.restassured.path.json.JsonPath;
+
+public class SumValidation {
+	//6. Verify if Sum of all Course prices matches with Purchase Amount
+	
+	@Test
+	public void sumOfCourses() {
+		
+		int sum=0;
+		JsonPath js = new JsonPath(Payload.CoursePrice());
+		int count = js.getInt("courses.size()");
+		
+		for(int i=0;i<count;i++) {
+			int price = js.getInt("courses["+i+"].price");
+			int copies = js.getInt("courses["+i+"].copies");
+			int amount = price*copies;
+			System.out.println(amount);
+			sum+=amount;
+		}
+		System.out.println(sum);
+		
+		int purchaseAmount = js.getInt("dashboard.purchaseAmount");
+		Assert.assertEquals(sum,purchaseAmount);
+	}
+	
+
+}
+
+********************** ********************** ********************** ********************** ********************** ********************** ********************************************
+Handling Dynamic Json payloads with parameterization:
+
+1.dynamically build json payload with external data inputs
+2.parameterize the api tests with multiple data sets
+3.how to send static json files(payload) directly into post method of rest assured
+4.feed json payload from using excel using hashmap
+5.pojo classes for building api
+********************** ********************** ********************** ********************** ********************** ********************** ********************************************
+
+Lets use library api all the details are provided in the doc Library+API.docx
+
+Lets first see the api in post man
+
+Create a DynamicJson.java file in files package
+
+create a Addbook() method in the payload.java
+
+
+package files;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+
+import static io.restassured.RestAssured.*;
+
+public class DynamicJson {
+
+	@Test
+	public void addBook() {
+		RestAssured.baseURI="http://216.10.245.166";
+		String response = given().header("Content-Type","application/json")
+		.body(Payload.addBook()).
+		when().
+		post("/Library/Addbook.php")
+		.then().assertThat().statusCode(200)
+		.extract().response().asString();
+		
+		JsonPath js = ReusableMethods.rawToJson(response);
+		String id = js.getString("ID");
+		System.out.println(id);
+	}
+}
+
+
+in Payload.java add below method for payload of addBook
+
+public static String addBook() {
+		String payload =  "{\r\n"
+				+ "\r\n"
+				+ "\"name\":\"Learn Appium Automation with Java\",\r\n"
+				+ "\"isbn\":\"bcd\",\r\n"
+				+ "\"aisle\":\"257127\",\r\n"
+				+ "\"author\":\"John foe\"\r\n"
+				+ "}\r\n"
+				+ " \r\n"
+				+ "";
+		return payload;
+	}
+
+
+********************** ********************** ********************** ********************** ********************** ********************** ********************************************
+
+Sending parameters to payload from test:
+
+package files;
+
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+
+import static io.restassured.RestAssured.*;
+
+public class DynamicJson {
+
+	@Test
+	public void addBook() {
+		RestAssured.baseURI="http://216.10.245.166";
+		String response = given().header("Content-Type","application/json")
+		.body(Payload.addBook("adsdffa","896543")).
+		when().
+		post("/Library/Addbook.php")
+		.then().assertThat().statusCode(200)
+		.extract().response().asString();
+		
+		JsonPath js = ReusableMethods.rawToJson(response);
+		String id = js.getString("ID");
+		System.out.println(id);
+		
+		
+		//in real time we should delete the book so that it can run daily
+	}
+}
+
+
+public static String addBook(String isbn, String aisle) {
+		String payload =  "{\r\n"
+				+ "\r\n"
+				+ "\"name\":\"Learn Appium Automation with Java\",\r\n"
+				+ "\"isbn\":\""+isbn+"\",\r\n"
+				+ "\"aisle\":\""+aisle+"\",\r\n"
+				+ "\"author\":\"John foe\"\r\n"
+				+ "}\r\n"
+				+ " \r\n"
+				+ "";
+		return payload;
+	}
+
+********************** ********************** ********************** ********************** ********************** ********************** ********************************************
+Understanding testNg data provider for parameterization:
+
+package files;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+
+import static io.restassured.RestAssured.*;
+
+public class DynamicJson {
+
+	@Test(dataProvider="BooksData")
+	public void addBook(String isbn,String aisle) {
+		RestAssured.baseURI="http://216.10.245.166";
+		String response = given().header("Content-Type","application/json")
+		.body(Payload.addBook(isbn,aisle)).
+		when().
+		post("/Library/Addbook.php")
+		.then().assertThat().statusCode(200)
+		.extract().response().asString();
+		
+		JsonPath js = ReusableMethods.rawToJson(response);
+		String id = js.getString("ID");
+		System.out.println(id);
+		
+		
+		//in real time we should delete the book so that it can run daily
+	}
+	
+	
+	@DataProvider(name="BooksData")
+	public Object[][] getData() {
+		//collections of arrays = multi dimensional array
+		return new Object[][] {{"sffaa","349193"},{"dvvvfv","93949"},{"svvdd","1384"}};
+	}
+}
+********************** ********************** ********************** ********************** ********************** ********************** ********************************************
+How to handle with static json payloads:
+
+if we have static json stored in a file with .json extension we can use it inside body()
+
+body(new String(Files.readAllBytes(Paths.get("C:\\Users\\addPlace.json"))))
+
+
+package day2;
+
+import static io.restassured.RestAssured.given;
+
+import java.io.IOException;
+
+import java.nio.file.Files;
+
+import java.nio.file.Paths;
+
+import org.testng.annotations.Test;
+
+import files.ReusableMethods;
+
+import files.payLoad;
+
+import io.restassured.RestAssured;
+
+import io.restassured.path.json.JsonPath;
+
+import io.restassured.response.Response;
+
+public class StaticJson {
+
+	@Test
+
+	public void addBook() throws IOException
+
+	{
+
+		RestAssured.baseURI = "http://216.10.245.166";
+
+		Response resp = given().
+
+				header("Content-Type", "application/json").
+
+				body(GenerateStringFromResource("C:\\Users\\rahul\\Documents\\Addbookdetails.json")).
+
+				when().
+
+				post("/Library/Addbook.php").
+
+				then().assertThat().statusCode(200).
+
+				extract().response();
+
+		JsonPath js = ReusableMethods.rawToJson(resp);
+
+		String id = js.get("ID");
+
+		System.out.println(id);
+
+		// deleteBOok
+
+	}
+
+	public static String GenerateStringFromResource(String path) throws IOException {
+
+		return new String(Files.readAllBytes(Paths.get(path)));
+
+	}
+
+}
+
