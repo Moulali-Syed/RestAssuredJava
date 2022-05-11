@@ -1,0 +1,249 @@
+What is OAuth 2.0?
+
+OAuth 2.0 comes with multiple grant types
+Authorization code and client credentials are the most commonly used grant types for OAuth
+Understand the flow of OAuth[Authorization code] grant type with real world example
+backend implementation of authorization code with different layers of security
+plan for genrating access token using APIs in postman for complex flow of authorization code OAuth 2.0
+API testing with generated access token
+automate complete OAuth 2.0 flow using rest assured
+shortcut to generate access token for OAuth in postman
+how client credentials grant types are different from authorization code grant type
+**********************************************************************************************************************************************************************************************
+
+Understand granttype authorization flow with real time example:
+
+OAuth2.0 is used mostly in all websites , like we see login - connect with facebook | signin with Google
+
+When we click on sign in with google , it will prompt user to login with their gmail
+
+why applications rely on other [google or facebook] authentications?
+No data breach headaches for application
+need not maintain user profile data
+this allows richer websites by allowing disparate applications to talk to each other
+only user profile is shared not password of gmail or facebook
+
+client - BookMyShow
+clientID - id that identifies the client
+client secret id - bookmyshow registers this with google
+resource owner - human
+resource/authorization server - google
+
+bookmyshow[client] tie up with google thus gets client_id
+user signin to google by hitting authorization server and get code ,application will use this code to hit google resource server in backend to get access token,firstName,lastName,emailId
+application grants access to user by validating access token
+
+for every operation in website will now match with access token
+**********************************************************************************************************************************************************************************************
+Flow procedure in achieving OAuth 2.0 autentication mechanism:
+
+We will get authorization url as below:
+https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/userinfo.email&auth_url=https://accounts.google.com/o/oauth2/v2/auth&client_id=692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com&response_type=code&redirect_uri=https://rahulshettyacademy.com/getCourse.php
+
+Query Params:
+scope , auth_url , client_id , response_type ,  redirect_uri will be seen in queryparams tab
+state is optional queryParam , which if given should match with the value present in application
+
+go to above provided url and login with gmail , once logged in we get url as below
+https://rahulshettyacademy.com/getCourse.php?code=4%2F0AX4XfWg922To0mrjFgQ3y9M1qXFlndcRT-FtCndS82QrpIgLnZm0OoPt40Pie4o3GAe3jA&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=1&prompt=consent
+
+paste it in postman , then we can see in queryParams that code,scope,authuser,prompt
+of which code is required one for us which got genrated on successful authnetication of OAuth
+
+
+
+GrantType - Authorization code , we have so many types
+RedirectURL - where our application should redirect on signin
+authServerURL - 3rd party server url
+accessTokenURL - with exchange of code we get access token
+state - random string
+**********************************************************************************************************************************************************************************************
+
+Building up rest assured automation test for OAuth Project:
+
+
+
+package day3;
+
+import static io.restassured.RestAssured.given;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.restassured.path.json.JsonPath;
+
+public class OAuth2 {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		System.setProperty("webdriver.chrome.driver", "C:\\Testing\\Drivers\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		// login using the gmail/fb
+		driver.get(
+				"https://accounts.google.com/signin/v2/challenge/pwd?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&auth_url=https%3A%2F%2Faccounts.google.com%2Fo%2Foauth2%2Fv2%2Fauth&client_id=692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com&response_type=code&redirect_uri=https%3A%2F%2Frahulshettyacademy.com%2FgetCourse.php&flowName=GeneralOAuthFlow&cid=1&navigationDirection=forward&TL=AM3QAYYEZdMTjUR83LXlxjUXDoQICMFrjec-DpPFGDgStTyHa6Q5Y3Oc_yAdfAb2");
+		driver.findElement(By.cssSelector("input[type='email']")).sendKeys("apple123");
+		Thread.sleep(2000);
+
+		driver.findElement(By.cssSelector("input[type='password']")).sendKeys("password");
+		driver.findElement(By.cssSelector("input[type='password']")).sendKeys(Keys.ENTER);
+		Thread.sleep(2000);
+
+		// get the url and extract the code
+		String url = driver.getCurrentUrl();
+//		in new google chrome version automatic chrome invocation and getting code from it is blocked should be done manually up to this step
+//		String url = "https://rahulshettyacademy.com/getCourse.php?code=4%2F0AX4XfWg922To0mrjFgQ3y9M1qXFlndcRT-FtCndS82QrpIgLnZm0OoPt40Pie4o3GAe3jA&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=1&prompt=consent"
+		String partialcode = url.split("code=")[1];
+		String code = partialcode.split("&scope")[0];
+		System.out.println(code);
+
+		// send the code and extract access token
+		String accessTokenResponse = given().urlEncodingEnabled(false).queryParam("code", code)
+				.queryParam("client_id", "692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com")
+				.queryParam("client_secret", "erZOWM9g3UtwNRj340YYaK_W")
+				.queryParam("redirect_uri", "https://rahulshettyacademy.com/getCourse.php")
+				.queryParam("grant_type", "autorization_code").when().log().all()
+				.post("https://www.googleapis.com/oauth2/v4/token").asString();
+
+		JsonPath js = new JsonPath(accessTokenResponse);
+		String accessToken = js.getString("access_token");
+
+		// send the access token
+		String response = given().queryParam("access_token", accessToken).when().log().all()
+				.get("https://rahulshettyacademy.com/getCourse.php").asString();
+
+		System.out.println(response);
+
+	}
+
+}
+
+//urlEncodingEnabled(false)  -  should be used to stop automatic conversion of codes
+
+
+**********************************************************************************************************************************************************************************************
+
+code as per new google update:
+
+package demo;
+
+import static io.restassured.RestAssured.given;
+
+
+
+import java.util.ArrayList;
+
+import java.util.Arrays;
+
+import java.util.List;
+
+
+
+import org.openqa.selenium.By;
+
+import org.openqa.selenium.Keys;
+
+import org.openqa.selenium.WebDriver;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+
+import io.restassured.parsing.Parser;
+
+import io.restassured.path.json.JsonPath;
+
+import io.restassured.response.Response;
+
+import io.restassured.response.ResponseBody;
+
+import pojo.Api;
+
+import pojo.GetCourse;
+
+
+
+
+
+public class test1 {
+
+
+
+public static void main(String[] args) throws InterruptedException {
+
+// TODO Auto-generated method stub
+
+String url ="https://rahulshettyacademy.com/getCourse.php?state=verifyfjdss&code=4%2FvAHBQUZU6o4WJ719NrGBzSELBFVBI9XbxvOtYpmYpeV47bFVExkaxWaF_XR14PHtTZf7ILSEeamywJKwo_BYs9M&scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&session_state=0c32992f0d47e93d273922018ade42d1072b9d1f..a35c&prompt=none#";
+
+
+
+String partialcode=url.split("code=")[1];
+
+String code=partialcode.split("&scope")[0];
+
+System.out.println(code);
+
+String response =
+
+                given() 
+
+                .urlEncodingEnabled(false)
+
+                       .queryParams("code",code)
+
+               
+
+                   .queryParams("client_id", "692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com")
+
+                        .queryParams("client_secret", "erZOWM9g3UtwNRj340YYaK_W")
+
+                        .queryParams("grant_type", "authorization_code")
+
+                        .queryParams("state", "verifyfjdss")
+
+                        .queryParams("session_state", "ff4a89d1f7011eb34eef8cf02ce4353316d9744b..7eb8")
+
+                     // .queryParam("scope", "email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email")
+
+                       
+
+                        .queryParams("redirect_uri", "https://rahulshettyacademy.com/getCourse.php")
+
+                        .when().log().all()
+
+                        .post("https://www.googleapis.com/oauth2/v4/token").asString();
+
+// System.out.println(response);
+
+JsonPath jsonPath = new JsonPath(response);
+
+    String accessToken = jsonPath.getString("access_token");
+
+    System.out.println(accessToken);
+
+String r2=    given().contentType("application/json").
+
+queryParams("access_token", accessToken).expect().defaultParser(Parser.JSON)
+
+.when()
+
+           .get("https://rahulshettyacademy.com/getCourse.php")
+
+.asString();
+
+System.out.println(r2);
+
+
+
+}
+
+
+
+}
+
+
+
+For Grant Type - Client Credentials no need of google auth get the url directly from the dev team
+
+

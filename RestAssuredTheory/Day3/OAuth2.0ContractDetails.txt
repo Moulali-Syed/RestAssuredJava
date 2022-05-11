@@ -1,0 +1,34 @@
+OAuth 2.0 Contract Details:
+
+GrantType	Authorization code
+redirect URL/Callback URL	https://rahulshettyacademy.com/getCourse.php
+Authorization server url	https://accounts.google.com/o/oauth2/v2/auth
+Access token url	https://www.googleapis.com/oauth2/v4/token
+Client ID	692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com
+Client Secret	erZOWM9g3UtwNRj340YYaK_W
+Scope	https://www.googleapis.com/auth/userinfo.email
+State	Any random string
+How to pass oauth in request	Headers
+
+
+Mandatory fields for GetAuthorization Code Request ;
+End Point : Authorization server url
+Query Params:Scope, Auth_url, client_id, response_type, redirect_uri
+
+output : Code
+
+
+
+Mandatory fields for GetAccessToken Request :
+End point : Access token url
+Query Params :Code, client_id, 	client_secret, redirect_uri, grant_type
+Output : Access token
+
+
+
+GrantType - Authorization code , we have so many types
+RedirectURL - where our application should redirect on signin
+authServerURL - 3rd party server url
+accessTokenURL - with exchange of code we get access token
+state - random string
+
