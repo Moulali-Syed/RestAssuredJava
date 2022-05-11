@@ -1,0 +1,377 @@
+Open chrome Search Jira Download
+https://www.atlassian.com/software/jira/update
+click get started --> choose OS --> check mark agree --> submit
+and jira will be downloaded --> install it
+
+Once jira installed and opened in chrome at local host 8080 , select Set it up for me
+
+Then select Product - Jira Software [data center] selected by default
+give any organization name and click on generate license , click yes to install license on local host
+
+Then provide details of mail, name , password 
+
+we will get jira is ready to go on screen
+
+click on http://localhost:8080/secure/WelcomeToJIRA.jspa. this url , will take to default login page , select language , continue , next
+
+if we shutdown system , then go to the atlassian jira folder click on start_service and then open in localhost 8080
+
+/*
+
+
+- go to jira folder [the folder where you have the start-jira.bat file]. Mine is in "C:\Users\admin\Atlassian\Jira\bin"
+
+- copy the directory of where that file is
+
+- open cmd as admin
+
+- type: cd C:\Users\admin\Atlassian\Jira\bin  .. ( or whereever your start-jira.bat file is located)
+
+- then type: start-jira.bat /fg {hit enter}
+
+*/
+***************  ***************  ***************  ***************   ***************  ***************  ***************
+Cookie Authentication API for Jira requests:
+
+search jira rest api in google and goto  https://developer.atlassian.com/server/jira/platform/rest-apis/
+
+There we have 2 types of api - jira server api , jira cloud api 
+as we have downloaded jira server , we need to use jira server apis
+
+go to https://docs.atlassian.com/software/jira/docs/api/REST/8.22.2/
+
+
+when we want to create an issue using jira - create a scrum project - click on Create - this will open create issue window , provide summary
+and click on create , this creates a new issue
+
+We can use rest api - create issue , to create an issue using api
+
+search jira login cookie based authentication
+https://developer.atlassian.com/server/jira/platform/cookie-based-authentication/
+we can authenticate  using the cookie 
+all instructions to create cookie auth is provided in above url
+
+
+Now open postman 
+as given in docs http://jira.example.com:8090/jira/rest/auth/1/session 
+our jira runs on local host 8080 , so provide the url with resource
+http://localhost:8080/rest/auth/1/session
+
+Select Post , go to body select raw and JSON
+provide this as body
+{ "username": "syedmoulali1997", "password": "Qwerty123@" }
+
+and click on send we will get response
+
+{
+    "session": {
+        "name": "JSESSIONID",
+        "value": "F9AD72CCB1F5BCBBC644245082284F82"
+    },
+    "loginInfo": {
+        "loginCount": 2,
+        "previousLoginTime": "2022-05-11T06:26:46.953+0530"
+    }
+}
+
+Now we can pass the header as specified in the document
+headers: {cookie: JSESSIONID=6E3487971234567896704A9EB4AE501F}
+
+
+Now lets start creating an issue
+go to https://docs.atlassian.com/software/jira/docs/api/REST/8.22.2/#issue-createIssue and follow instructions
+
+go to issue - create issue in above doc
+
+in postman create new request
+give url as http://localhost:8080/rest/issue and select POST
+to pass session details we need to pass header as mentioned in session creation api doc
+example : headers: {cookie: JSESSIONID=6E3487971234567896704A9EB4AE501F}
+
+Cookie this will be added automatically
+pass the body and send
+
+{
+     "fields": {
+        "project": {
+            "key": "RES"
+        },
+        "summary": "creating a defect",
+        "issueType":{
+            "name":"Bug"
+        },
+        "description":"Defect"
+    }
+}
+
+
+Lets see delete issue:
+
+provide the url http://localhost:8080/rest/issue/{issueIdOrKey}
+
+{issueIdOrKey} - path parameter , pass it whatever generated using create issue
+http://localhost:8080/rest/issue/{10204}
+
+select delete method 
+
+if we get 204 then its removed successfully
+
+
+Add a comment:
+provide the url http://localhost:8080/rest/api/2/issue/{10205}/comment
+provide method as POST , header of session id cookie ,body as in documentation
+click on send
+
+Lets update comment:
+provide url http://localhost:8080/rest/api/2/issue/{issueIdOrKey}/comment/{id}
+
+and set PUT , and provide body and send , alos provide the comment id, issueId
+
+
+**************************************************************************************************************************************************************************
+Now lets automate in rest assured
+
+create a new package day3 - create a java file JiraTest
+
+1.adding path parameter
+
+
+		// lets first add a comment to existing issue
+		
+		// if something in {} it is path parameter , and ? it is query parameter
+		given().pathParam("key","10101").log().all().header("Content-Type","application/json").body("").post("/rest/api/2/issue/{key}/comment")
+		
+		//whatever we pass in pathParam as key value will fall at this {} matching pathParam name
+		//here above we r passing pathParam key in- pathParam("key","10101") , which at run time passed to the {key}
+		// in post("/rest/api/2/issue/{key}/comment")
+
+
+2.Importance of session filter cookie in rest assured code:
+
+//importance of session filter cookie in rest assured code
+		//login scenario
+		//we can extract the session id either from JsonPath and then extracting from it
+		// or we can use SessionFilter class object and pass it in given as filter(session)
+		//we can pass this session for subsequent operations as well
+		SessionFilter session = new SessionFilter();
+		String response = given().header("Content-Type","application/json").body("").log().all().filter(session)
+		.when().post("/rest/auth/1/session").then().log().all().extract().response().asString();
+
+3.multipart method for sending attachments
+//3.add an attachment to rest api using multipart method in rest assured
+		//first in jira page - on top right - go to settings icon - system - attachments - Set allow attachments to ON
+		//add an attachment as per document
+		given().header("X-Atlassian-Token","no-check").filter(session).pathParam("key","10101")
+		.header("Content-Type","multipart/form-data")
+		.multiPart("file",new File("jira.txt"))
+		.when().post("rest/api/2/issue/{key}/attachments").then().log().all().assertThat().statusCode(200);
+
+//4 . integrating query params and path params in single test to restrict results
+		//get issue
+		String issueDetails = given().filter(session).pathParam("key","10101").queryParam("fields","comment").
+		log().all(). when().get("/rest/api/2/issue/{key}").then()
+		.log().all().extract().response().asString();
+		System.out.println(issueDetails);
+		
+		JsonPath js1 = new JsonPath(issueDetails);
+		int commentsCount = js1.getInt("fields.comment.comments.size()");
+		for(int i=0;i<commentsCount;i++) {
+			String commentIdIssue = js1.get("fields.comment.comments["+i+"].id").toString();
+			if(commentIdIssue.equalsIgnoreCase(commentId)) {
+				String message = js1.get("fields.comment.comments["+i+"].body").toString();	
+			}
+		}
+
+//5 handling https certification validations:
+after given pass the method - relaxedHTTPSValidation()
+given().relaxedHTTPSValidation()
+**************************************************************************************************************************************************************************
+
+package files;
+
+import static io.restassured.RestAssured.*;
+
+
+
+import java.io.File;
+
+
+
+import org.testng.Assert;
+
+
+
+import io.restassured.RestAssured;
+
+import io.restassured.filter.session.SessionFilter;
+
+import io.restassured.path.json.JsonPath;
+
+
+
+public class JiraTest {
+
+
+
+public static void main(String[] args) {
+
+// TODO Auto-generated method stub
+
+RestAssured.baseURI="http://localhost:8080";
+
+//Login Scenario
+
+SessionFilter session=new SessionFilter();
+
+String response=given().relaxedHTTPSValidation().header("Content-Type","application/json").body("{\r\n" +
+
+"    \"username\": \"RahulShetty\",\r\n" +
+
+"    \"password\": \"XXXX11\"\r\n" +
+
+"}").log().all().filter(session).when().post("/rest/auth/1/session").then().log().all().extract().response().asString();
+
+String expectedMessage ="Hi How are you?";
+
+//Add comment
+
+String addCommentResponse = given().pathParam("key", "10101").log().all().header("Content-Type","application/json").body("{\r\n" +
+
+"    \"body\": \""+expectedMessage+"\",\r\n" +
+
+"    \"visibility\": {\r\n" +
+
+"        \"type\": \"role\",\r\n" +
+
+"        \"value\": \"Administrators\"\r\n" +
+
+"    }\r\n" +
+
+"}").filter(session).when().post("/rest/api/2/issue/{key}/comment").then().log().all()
+
+.assertThat().statusCode(201).extract().response().asString();
+
+JsonPath js=new JsonPath(addCommentResponse);
+
+String commentId= js.getString("id");
+
+//Add Attachment
+
+given().header("X-Atlassian-Token","no-check").filter(session).pathParam("key", "10101")
+
+.header("Content-Type","multipart/form-data")
+
+.multiPart("file",new File("jira.txt")).when().
+
+post("rest/api/2/issue/{key}/attachments").then().log().all().assertThat().statusCode(200);
+
+//Get Issue
+
+String issueDetails=given().filter(session).pathParam("key", "10101")
+
+.queryParam("fields", "comment")
+
+.log().all().when().get("/rest/api/2/issue/{key}").then()
+
+.log().all().extract().response().asString();
+
+System.out.println(issueDetails);
+
+JsonPath js1 =new JsonPath(issueDetails);
+
+int commentsCount=js1.getInt("fields.comment.comments.size()");
+
+for(int i=0;i<commentsCount;i++)
+
+{
+
+String commentIdIssue =js1.get("fields.comment.comments["+i+"].id").toString();
+
+if (commentIdIssue.equalsIgnoreCase(commentId))
+
+{
+
+String message= js1.get("fields.comment.comments["+i+"].body").toString();
+
+System.out.println(message);
+
+Assert.assertEquals(message, expectedMessage);
+
+}
+
+}
+
+}
+
+
+
+}
+
+**************************************************************************************************************************************************************************
+
+package day3;
+
+import static io.restassured.RestAssured.*;
+
+import java.io.File;
+
+import io.restassured.RestAssured;
+import io.restassured.filter.session.SessionFilter;
+import io.restassured.path.json.JsonPath;
+public class JiraTest {
+
+	public static void main(String[] args) {
+		
+		
+		RestAssured.baseURI = "http://localhost:8080";
+		
+		//importance of session filter cookie in rest assured code
+		//login scenario
+		//we can extract the session id either from JsonPath and then extracting from it
+		// or we can use SessionFilter class object and pass it in given as filter(session)
+		//we can pass this session for subsequent operations as well
+		SessionFilter session = new SessionFilter();
+		String response = given().header("Content-Type","application/json").body("").log().all().filter(session)
+		.when().post("/rest/auth/1/session").then().log().all().extract().response().asString();
+		
+		
+		// lets first add a comment to existing issue
+		
+		// if something in {} it is path parameter , and ? it is query parameter , passing session using the sessionfilter
+		String addCommentResponse = given().pathParam("key","10101").log().all().header("Content-Type","application/json").body("").filter(session)
+		.when().post("/rest/api/2/issue/{key}/comment").then().log().all().assertThat().statusCode(201).extract().response().asString();
+		JsonPath js = new JsonPath(addCommentResponse);
+		String commentId = js.getString("id");
+		//whatever we pass in pathParam as key value will fall at this {} matching pathParam name
+		//here above we r passing pathParam key in- pathParam("key","10101") , which at run time passed to the {key}
+		// in post("/rest/api/2/issue/{key}/comment")
+		
+		
+		//3.add an attachment to rest api using multipart method in rest assured
+		//first in jira page - on top right - go to settings icon - system - attachments - Set allow attachments to ON
+		//add an attachment as per document
+		given().header("X-Atlassian-Token","no-check").filter(session).pathParam("key","10101")
+		.header("Content-Type","multipart/form-data")
+		.multiPart("file",new File("jira.txt"))
+		.when().post("rest/api/2/issue/{key}/attachments").then().log().all().assertThat().statusCode(200);
+		
+		
+		//4 . integrating query params and path params in single test to restrict results
+		//get issue
+		String issueDetails = given().filter(session).pathParam("key","10101").queryParam("fields","comment").
+		log().all(). when().get("/rest/api/2/issue/{key}").then()
+		.log().all().extract().response().asString();
+		System.out.println(issueDetails);
+		
+		JsonPath js1 = new JsonPath(issueDetails);
+		int commentsCount = js1.getInt("fields.comment.comments.size()");
+		for(int i=0;i<commentsCount;i++) {
+			String commentIdIssue = js1.get("fields.comment.comments["+i+"].id").toString();
+			if(commentIdIssue.equalsIgnoreCase(commentId)) {
+				String message = js1.get("fields.comment.comments["+i+"].body").toString();	
+			}
+		}
+	}
+
+}
+

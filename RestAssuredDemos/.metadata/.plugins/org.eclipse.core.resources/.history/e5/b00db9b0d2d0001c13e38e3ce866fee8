@@ -1,0 +1,17 @@
+package day3;
+
+import static io.restassured.RestAssured.*;
+import io.restassured.RestAssured;
+public class JiraTest {
+
+	public static void main(String[] args) {
+		
+		
+		// lets first add a comment to existing
+		
+		// if something in {} it is path parameter , and ? it is query parameter
+		given().pathParam("")
+
+	}
+
+}

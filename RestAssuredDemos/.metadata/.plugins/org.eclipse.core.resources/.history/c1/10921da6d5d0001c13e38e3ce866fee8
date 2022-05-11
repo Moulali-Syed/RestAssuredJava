@@ -1,0 +1,26 @@
+package day3;
+
+import static io.restassured.RestAssured.*;
+import io.restassured.RestAssured;
+public class JiraTest {
+
+	public static void main(String[] args) {
+		
+		
+		RestAssured.baseURI = "http://localhost:8080";
+		
+		
+		
+		// lets first add a comment to existing issue
+		
+		// if something in {} it is path parameter , and ? it is query parameter
+		given().pathParam("key","10101").log().all().header("Content-Type","application/json").body("").post("/rest/api/2/issue/{key}/comment")
+		
+		//whatever we pass in pathParam as key value will fall at this {} matching pathParam name
+		//here above we r passing pathParam key in- pathParam("key","10101") , which at run time passed to the {key}
+		// in post("/rest/api/2/issue/{key}/comment")
+				
+
+	}
+
+}
