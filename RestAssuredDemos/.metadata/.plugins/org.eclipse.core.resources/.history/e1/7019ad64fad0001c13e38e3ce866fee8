@@ -1,0 +1,11 @@
+package pojoDay3;
+
+public class GetCourse {
+
+	private String url;
+	private String services;
+	private String expertise;
+	private String Courses;
+	private String instructor;
+	private String linkedIn;
+}

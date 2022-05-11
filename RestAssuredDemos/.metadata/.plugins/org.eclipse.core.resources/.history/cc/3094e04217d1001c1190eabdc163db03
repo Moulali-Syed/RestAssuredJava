@@ -1,0 +1,14 @@
+package day3;
+
+public class AddPlacePojo {
+
+	private String location;
+	private String accuracy;
+	private String name;
+	private String phoneNumber;
+	private String address;
+	private String types;
+	private String website;
+	private String language;
+	
+}

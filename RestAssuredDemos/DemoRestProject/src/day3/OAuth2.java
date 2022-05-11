@@ -2,12 +2,21 @@ package day3;
 
 import static io.restassured.RestAssured.given;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
+import io.restassured.parsing.Parser;
 import io.restassured.path.json.JsonPath;
+import pojoDay3.Api;
+import pojoDay3.GetCourse;
+import pojoDay3.WebAutomation;
 
 public class OAuth2 {
 
@@ -49,9 +58,82 @@ public class OAuth2 {
 				.get("https://rahulshettyacademy.com/getCourse.php").asString();
 
 		System.out.println(response);
-
+		
+		
+		
+		//deserialization - use get methods
+		GetCourse gc =  given().queryParam("access_token",accessToken).expect().defaultParser(Parser.JSON)
+							.when()
+							.get("https://rahulshettyacademy.com/getCourse.php").as(GetCourse.class);
+																					//className.class
+		System.out.println(gc.getLinkedIn());
+		System.out.println(gc.getInstructor());
+		
+		
+		//quereying the nested json
+		gc.getCourses().getApi().get(1).getCourseTitle();
+		
+		//iterating and finding the required match
+		List<Api> apiCourses = gc.getCourses().getApi();
+		for(int i=0;i<apiCourses.size();i++) {
+			if(apiCourses.get(i).getCourseTitle().equalsIgnoreCase("SoapUI Webservices testing")) {
+				System.out.println(apiCourses.get(i).getPrice());
+			}
+		}
+		
+		
+		String[] courseTitles = {"Selenium Webdriver Java","Cypress","Protractor"};
+		ArrayList<String> a = new ArrayList<String>();
+		//print all course names of WebAutomation
+		List<WebAutomation> w = gc.getCourses().getWebAutomation();
+		for(int j=0;j<w.size();j++) {
+			a.add(w.get(j).getCourseTitle());
+			System.out.println(w.get(j).getCourseTitle());
+		}
+		
+		List<String> expectedList = Arrays.asList(courseTitles);
+		Assert.assertTrue(a.equals(expectedList));
+		
 	}
 
 }
 
 //urlEncodingEnabled(false)  -  should be used to stop automatic conversion of codes
+
+/*
+
+ public class Message {
+	private String message;
+	
+	public String getMessage() {
+		return message;
+	}
+	
+	public void setMessage(String message) {
+		this.message = message;
+	}
+}
+ 
+ 
+ //create java object
+ Message m = new Message();
+ m.setMessage("Hello");
+ 
+ 
+ //rest assured
+ Message msg = new Message();
+ msg.setMessage("My message");
+ given().
+ body(m).
+ when().
+ post("/message");
+ 
+ //run time request creation
+ 
+ 
+ //json
+ {
+	 "message":"Hello"
+ }
+
+*/
